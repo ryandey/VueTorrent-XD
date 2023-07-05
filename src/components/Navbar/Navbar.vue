@@ -1,11 +1,11 @@
 <template>
   <nav>
     <!--title-->
-    <v-app-bar app elevate-on-scroll class="noselect">
+    <v-app-bar app dense elevate-on-scroll color="primary" class="noselect opacity">
       <v-app-bar-nav-icon class="grey--text text--lighten-1" aria-label="Open Navigation Drawer" @click.stop="drawer = !drawer" />
       <v-toolbar-title v-if="!$vuetify.breakpoint.xs" :class="['grey--text', { 'subheading ml-0': $vuetify.breakpoint.smAndDown }]">
-        <span class="font-weight-light">qBit</span>
-        <span>torrent</span>
+        <span class="font-weight-light">qBittorrent</span>
+        <span>XD</span>
       </v-toolbar-title>
 
       <v-slide-x-transition>
@@ -124,7 +124,13 @@ export default {
       return this.getTorrentCountString()
     },
     filterCount() {
-      return (this.dashboard.searchFilter?.length > 0) + (this.sort_options.filter !== null) + (this.sort_options.category !== null) + (this.sort_options.tag !== null) + (this.sort_options.tracker !== null)
+      return (
+        (this.dashboard.searchFilter?.length > 0) +
+        (this.sort_options.filter !== null) +
+        (this.sort_options.category !== null) +
+        (this.sort_options.tag !== null) +
+        (this.sort_options.tracker !== null)
+      )
     }
   },
   created() {
@@ -139,7 +145,7 @@ export default {
     width: 6px;
   }
   &::-webkit-scrollbar-thumb {
-    background: #56718c;
+    background: #31244d;
     border-radius: 20px;
   }
 }

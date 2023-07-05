@@ -15,27 +15,28 @@ import colors from 'vuetify/lib/util/colors'
 // broke the variable import when updating deps
 const variables = {
   // Main colors
-  primary: '#35495e',
-  secondary: '#3e556d',
-  download: '#64CEAA',
-  upload: '#00b3fa',
-  ratio: '#00b2f8',
-  state: '#1e9367',
-  category: '#04669a',
-  tags: '#048b9a',
-  tracker: '#1eb9ac',
+  primary: '#0f081d',
+  secondary: '#231936',
+  download: '#915fff',
+  upload: '#b940ff',
+  ratio: '#9CA3AF',
+  state: '#9CA3AF',
+  category: '#915fff',
+  tags: '#915fff',
+  tracker: '#915fff',
+  border: '#ffffffc7',
   // Torrent status colors
-  'torrent-done': '#16573e',
-  'torrent-downloading': '#5bb974',
+  'torrent-done': '#26a16c',
+  'torrent-downloading': '#b940ff',
   'torrent-fail': '#f83e70',
   'torrent-errored': '#f83e70',
   'torrent-paused': '#9CA3AF',
   'torrent-queued': '#2e5eaa',
-  'torrent-seeding': '#4ecde6',
+  'torrent-seeding': '#915fff',
   'torrent-checking': '#ff7043',
   'torrent-stalled': '#4ADE80',
   'torrent-metadata': '#7e57c2',
-  'torrent-moving': '#ffaa2c'
+  'torrent-moving': '#f83e70'
 }
 
 export default new Vuetify({
@@ -46,19 +47,19 @@ export default new Vuetify({
     options: {
       customProperties: true
     },
-    dark: false,
+    dark: true,
     themes: {
       light: {
-        accent: '#64CEAA',
-        background: colors.grey.lighten4,
-        selected: colors.grey.lighten2,
+        accent: '#591ade',
+        background: variables.primary,
+        selected: variables.state,
         red: colors.red.accent2,
         ...variables
       },
       dark: {
-        accent: '#64CEAA',
-        background: '#121212',
-        selected: colors.grey.darken1,
+        accent: '#591ade',
+        background: variables.primary,
+        selected: variables.primary,
         red: colors.red.accent3,
         ...variables
       }

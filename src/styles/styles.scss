@@ -36,6 +36,9 @@ $sideborder-margin: 6px;
 .sideborder.unknown {
   border-left: #{$sideborder-margin} solid #{$torrent-unknown};
 }
+.fullborder {
+  border: 1px solid #{$border};
+}
 .v-chip.done {
   background: #{$torrent-done} !important;
 }
@@ -84,6 +87,10 @@ $sideborder-margin: 6px;
 
 .v-application a {
   color: inherit !important;
+}
+
+.v-card--outlined {
+  border: #{$sideborder-margin} solid gray !important;
 }
 
 :root {
@@ -151,6 +158,7 @@ div {
   }
 }
 body {
+  font-family: 'Inter Tight' !important;
   background-color: var(--v-background-base) !important;
   &::-webkit-scrollbar {
     width: 8px;

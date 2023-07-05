@@ -1,25 +1,26 @@
 // Main colors
-$primary: #35495e;
-$secondary: #3e556d;
-$download: #64ceaa;
-$upload: #00b3fa;
-$ratio: #00b2f8;
-$state: #1e9367;
-$category: #04669a;
-$tags: #048b9a;
-$tracker: #1eb9ac;
+$primary: #0f081d;
+$secondary: #231936;
+$download: #915fff;
+$upload: #b940ff;
+$ratio: #9ca3af;
+$state: #9ca3af;
+$category: #915fff;
+$tags: #915fff;
+$tracker: #915fff;
+$border: #ffffffc7;
 // Torrent status colors
-$torrent-done: #16573e;
-$torrent-downloading: #5bb974;
+$torrent-done: #26a16c;
+$torrent-downloading: #b940ff;
 $torrent-fail: #f83e70;
 $torrent-errored: $torrent-fail;
 $torrent-paused: #9ca3af;
 $torrent-queued: #2e5eaa;
-$torrent-seeding: #4ecde6;
+$torrent-seeding: #915fff;
 $torrent-checking: #ff7043;
 $torrent-stalled: #4ade80;
 $torrent-metadata: #7e57c2;
-$torrent-moving: #ffaa2c;
+$torrent-moving: #f83e70;
 $torrent-unknown: #000000;
 
 :export {
